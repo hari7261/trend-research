@@ -16,4 +16,4 @@ Trend Research publishes technical papers in a format designed to be readable on
 
 ## Featured Paper
 
-- [Latency-Aware Multimodal Agent Orchestration](/research/latency-aware-multimodal-agent-orchestration/)
+- [Latency-Aware Multimodal Agent Orchestration](research/latency-aware-multimodal-agent-orchestration/)
