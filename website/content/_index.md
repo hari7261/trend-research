@@ -16,4 +16,5 @@ Trend Research publishes technical papers in a format designed to be readable on
 
 ## Featured Paper
 
+- [INDUS Terminal: A Repository-Based Study of a Native Command Runtime for Developer Workflows](https://hari7261.github.io/trend-research/research/indus-terminal-system-study/)
 - [Latency-Aware Multimodal Agent Orchestration](https://hari7261.github.io/trend-research/research/latency-aware-multimodal-agent-orchestration/)
