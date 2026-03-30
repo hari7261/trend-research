@@ -1,0 +1,97 @@
+baseURL = "https://hari7261.github.io/trend-research/"
+languageCode = "en-us"
+title = "Trend Research"
+theme = "PaperMod"
+enableRobotsTXT = true
+
+[pagination]
+pagerSize = 10
+
+[permalinks]
+research = "/research/:slug/"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+section = ["HTML", "RSS"]
+page = ["HTML"]
+
+[outputFormats.JSON]
+mediaType = "application/json"
+baseName = "index"
+isPlainText = true
+notAlternative = true
+
+[params]
+defaultTheme = "auto"
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowRssButtonInSectionTermList = true
+disableSpecial1stPost = true
+images = ["/images/og-default.png"]
+description = "Professional open research archive for citation-backed technical papers and diagrams."
+author = "Trend Research"
+keywords = ["open research", "technical papers", "AI systems", "multimodal orchestration", "latency optimization"]
+
+[params.assets]
+disableHLJS = false
+
+[params.homeInfoParams]
+Title = "Trend Research"
+Content = "Citation-backed technical research with clean diagrams, durable slugs, and automated publishing."
+
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1000
+threshold = 0.3
+minMatchCharLength = 2
+keys = ["title", "permalink", "summary", "content"]
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[sitemap]
+changefreq = "weekly"
+filename = "sitemap.xml"
+priority = 0.7
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[frontmatter]
+date = ["created", "date", ":default"]
+lastmod = ["updated", "lastmod", ":default"]
+
+[menu]
+
+[module]
+[[module.mounts]]
+source = "../research"
+target = "content/research"
+
+[[module.mounts]]
+source = "content"
+target = "content"
+
+[[module.mounts]]
+source = "layouts"
+target = "layouts"
+
+[[module.mounts]]
+source = "static"
+target = "static"
+
+[[module.mounts]]
+source = "assets"
+target = "assets"
+
+[services]
+[services.rss]
+limit = 20

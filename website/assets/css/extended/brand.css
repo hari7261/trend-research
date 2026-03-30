@@ -1,0 +1,115 @@
+:root {
+  --theme: #f6f1e8;
+  --entry: #fffdf8;
+  --primary: #132238;
+  --secondary: #516173;
+  --tertiary: #d9d0c3;
+  --content: #182635;
+  --code-bg: #f1ece4;
+  --code-block-bg: #f1ece4;
+  --border: #ddd3c5;
+}
+
+.dark {
+  --theme: #f6f1e8;
+  --entry: #fffdf8;
+  --primary: #132238;
+  --secondary: #516173;
+  --tertiary: #d9d0c3;
+  --content: #182635;
+  --code-bg: #f1ece4;
+  --code-block-bg: #f1ece4;
+  --border: #ddd3c5;
+}
+
+body {
+  font-family: "Source Serif 4", Georgia, serif;
+  background:
+    radial-gradient(circle at top left, rgba(181, 154, 108, 0.12), transparent 28%),
+    linear-gradient(180deg, #fbf7ef 0%, #f4efe7 100%);
+}
+
+.logo a,
+.button,
+.toc,
+.post-meta,
+.breadcrumbs,
+.nav,
+button,
+input,
+select {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+}
+
+.post-title,
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  letter-spacing: -0.02em;
+  color: #102033;
+}
+
+.post-title {
+  font-size: 3rem;
+  line-height: 1.05;
+  max-width: 18ch;
+}
+
+.post-content {
+  font-size: 1.08rem;
+  line-height: 1.85;
+}
+
+.post-content h2 {
+  font-size: 1.85rem;
+  margin-top: 2.4rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1.1rem;
+}
+
+.post-content h3 {
+  font-size: 1.35rem;
+}
+
+.post-content table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.6rem 0;
+  font-size: 0.97rem;
+}
+
+.post-content th,
+.post-content td {
+  border: 1px solid var(--border);
+  padding: 0.8rem 0.9rem;
+  vertical-align: top;
+}
+
+.post-content th {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  background: rgba(19, 34, 56, 0.04);
+}
+
+.post-content img,
+.post-content svg {
+  background: transparent;
+}
+
+code,
+pre,
+.post-content pre code {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.main {
+  max-width: 980px;
+}
+
+.entry-cover {
+  border: 1px solid var(--border);
+}

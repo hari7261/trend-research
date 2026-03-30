@@ -1,0 +1,68 @@
+name: Research Request
+description: Propose a topic for a new technical research article or a substantial revision
+title: "[Research Request]: "
+labels:
+  - research
+  - triage
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: Topic
+      description: The research topic you want added or expanded
+      placeholder: Latency-aware multimodal agent orchestration
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem_statement
+    attributes:
+      label: Problem Statement
+      description: Explain the core question, gap, or decision area this research should address
+      placeholder: Describe the core technical problem, why it matters, and what a finished article should clarify
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Desired Scope
+      description: Define the boundaries, audience, and expected depth
+      placeholder: Define scope, target audience, depth, exclusions, and whether implementation guidance is expected
+    validations:
+      required: true
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Suggested Sources
+      description: Add authoritative sources, papers, organizations, or datasets if available
+      placeholder: Primary sources, standards bodies, company docs, academic papers, datasets
+
+  - type: textarea
+    id: seo
+    attributes:
+      label: SEO Angle
+      description: Suggested search intent, keywords, or discoverability goals
+      placeholder: Example keywords, search phrasing, or audience queries
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I have searched existing issues and research articles for duplicates
+          required: true
+        - label: I understand that accepted research may be edited for structure, citations, and SEO
+          required: true
