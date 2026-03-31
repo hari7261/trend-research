@@ -1,0 +1,102 @@
+{{- define "main" }}
+
+<div class="research-container">
+  <header class="research-header">
+    {{- partial "breadcrumbs.html" . }}
+    <h1 class="research-title">{{ .Title }}</h1>
+    {{- if .Description }}
+    <p class="research-description">{{ .Description | markdownify }}</p>
+    {{- end }}
+  </header>
+
+  {{- if .Content }}
+  <div class="research-intro">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+
+  {{- $pages := union .RegularPages .Sections }}
+  {{- $paginator := .Paginate $pages }}
+
+  {{- if gt (len $paginator.Pages) 0 }}
+  <section class="research-papers">
+    <h2 class="papers-heading">Research Papers</h2>
+    <div class="papers-list">
+      {{- range $index, $page := $paginator.Pages }}
+      <article class="paper-card">
+        <div class="paper-content">
+          <h3 class="paper-title">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </h3>
+
+          {{- if (ne (.Param "hideSummary") true) }}
+          <p class="paper-summary">{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+          {{- end }}
+
+          {{- if not (.Param "hideMeta") }}
+          <div class="paper-meta">
+            {{- if .Date }}
+            <time class="paper-date" datetime="{{ .Date.Format "2006-01-02" }}">
+              {{ .Date.Format "January 2, 2006" }}
+            </time>
+            {{- end }}
+            {{- if .ReadingTime }}
+            <span class="paper-reading-time">{{ .ReadingTime }} min read</span>
+            {{- end }}
+            {{- if .Params.tags }}
+            <div class="paper-tags">
+              {{- range .Params.tags }}
+              <span class="paper-tag">{{ . }}</span>
+              {{- end }}
+            </div>
+            {{- end }}
+          </div>
+          {{- end }}
+
+          <a href="{{ .Permalink }}" class="paper-link" aria-label="Read {{ .Title | plainify }}">
+            <span>Read Paper</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </article>
+      {{- end }}
+    </div>
+  </section>
+  {{- else }}
+  <div class="no-papers">
+    <p>No research papers available yet.</p>
+  </div>
+  {{- end }}
+
+  {{- if gt $paginator.TotalPages 1 }}
+  <nav class="research-pagination" aria-label="Pagination">
+    {{- if $paginator.HasPrev }}
+    <a class="pagination-link pagination-prev" href="{{ $paginator.Prev.URL | absURL }}" rel="prev">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 12H5M12 19l-7-7 7-7"/>
+      </svg>
+      <span>Previous</span>
+    </a>
+    {{- end }}
+
+    <span class="pagination-info">
+      Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}
+    </span>
+
+    {{- if $paginator.HasNext }}
+    <a class="pagination-link pagination-next" href="{{ $paginator.Next.URL | absURL }}" rel="next">
+      <span>Next</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </svg>
+    </a>
+    {{- end }}
+  </nav>
+  {{- end }}
+</div>
+
+{{- end }}{{- /* end main */ -}}

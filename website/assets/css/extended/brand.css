@@ -1,3 +1,4 @@
+/* Light Mode Colors */
 :root {
   --theme: #f6f1e8;
   --entry: #fffdf8;
@@ -10,23 +11,28 @@
   --border: #ddd3c5;
 }
 
+/* Dark Mode Colors */
+[data-theme="dark"],
 .dark {
-  --theme: #f6f1e8;
-  --entry: #fffdf8;
-  --primary: #132238;
-  --secondary: #516173;
-  --tertiary: #d9d0c3;
-  --content: #182635;
-  --code-bg: #f1ece4;
-  --code-block-bg: #f1ece4;
-  --border: #ddd3c5;
+  --theme: #1a1a1a;
+  --entry: #262626;
+  --primary: #e5e5e5;
+  --secondary: #a3a3a3;
+  --tertiary: #404040;
+  --content: #d4d4d4;
+  --code-bg: #2d2d2d;
+  --code-block-bg: #2d2d2d;
+  --border: #404040;
 }
 
 body {
   font-family: "Source Serif 4", Georgia, serif;
-  background:
-    radial-gradient(circle at top left, rgba(181, 154, 108, 0.12), transparent 28%),
-    linear-gradient(180deg, #fbf7ef 0%, #f4efe7 100%);
+  background: var(--theme);
+}
+
+[data-theme="dark"] body,
+.dark body {
+  background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
 }
 
 .logo a,
