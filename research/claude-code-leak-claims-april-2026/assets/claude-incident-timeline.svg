@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Incident timeline</title>
+  <desc id="desc">A timeline showing the publication of Claude Code versions around the incident window and the current status of version 2.1.88.</desc>
+  <rect width="1200" height="680" fill="#fffdf8"/>
+  <text x="70" y="82" font-family="Georgia, serif" font-size="34" fill="#111827">Claude Code package timeline around the March-April 2026 leak claims</text>
+  <text x="70" y="118" font-family="Arial, sans-serif" font-size="18" fill="#4b5563">Based on npm registry timestamps and current tarball availability.</text>
+
+  <line x1="110" y1="340" x2="1090" y2="340" stroke="#cbd5e1" stroke-width="8" stroke-linecap="round"/>
+
+  <circle cx="220" cy="340" r="18" fill="#0f766e"/>
+  <text x="165" y="290" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">Mar 30, 2026</text>
+  <text x="145" y="385" font-family="Arial, sans-serif" font-size="20" fill="#111827">2.1.88 published</text>
+  <text x="134" y="412" font-family="Arial, sans-serif" font-size="17" fill="#4b5563">22:36:48 UTC</text>
+
+  <circle cx="430" cy="340" r="18" fill="#2563eb"/>
+  <text x="373" y="290" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">Mar 31, 2026</text>
+  <text x="355" y="385" font-family="Arial, sans-serif" font-size="20" fill="#111827">2.1.89 published</text>
+  <text x="344" y="412" font-family="Arial, sans-serif" font-size="17" fill="#4b5563">23:32:40 UTC</text>
+
+  <circle cx="635" cy="340" r="18" fill="#2563eb"/>
+  <text x="583" y="290" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">Apr 1, 2026</text>
+  <text x="560" y="385" font-family="Arial, sans-serif" font-size="20" fill="#111827">2.1.90 published</text>
+  <text x="549" y="412" font-family="Arial, sans-serif" font-size="17" fill="#4b5563">23:31:39 UTC</text>
+
+  <circle cx="830" cy="340" r="18" fill="#2563eb"/>
+  <text x="778" y="290" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">Apr 2, 2026</text>
+  <text x="755" y="385" font-family="Arial, sans-serif" font-size="20" fill="#111827">2.1.91 published</text>
+  <text x="744" y="412" font-family="Arial, sans-serif" font-size="17" fill="#4b5563">22:37:15 UTC</text>
+
+  <circle cx="1010" cy="340" r="18" fill="#2563eb"/>
+  <text x="958" y="290" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">Apr 4, 2026</text>
+  <text x="935" y="385" font-family="Arial, sans-serif" font-size="20" fill="#111827">2.1.92 published</text>
+  <text x="924" y="412" font-family="Arial, sans-serif" font-size="17" fill="#4b5563">00:05:59 UTC</text>
+
+  <rect x="110" y="485" width="980" height="110" rx="22" fill="#ffffff" stroke="#d1d5db"/>
+  <text x="145" y="535" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#111827">Current observable state on April 5, 2026</text>
+  <text x="145" y="572" font-family="Arial, sans-serif" font-size="20" fill="#374151">The 2.1.88 version entry remains in npm metadata, but its tarball URL returns 404.</text>
+
+  <rect x="145" y="182" width="180" height="58" rx="14" fill="#dcfce7"/>
+  <text x="165" y="217" font-family="Arial, sans-serif" font-size="18" fill="#14532d">Incident version existed</text>
+
+  <rect x="825" y="182" width="215" height="58" rx="14" fill="#dbeafe"/>
+  <text x="850" y="217" font-family="Arial, sans-serif" font-size="18" fill="#1d4ed8">Remediation releases continue</text>
+</svg>

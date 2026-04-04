@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Claude Code claims versus evidence</title>
+  <desc id="desc">A matrix comparing popular public claims with the evidence level supported by official and primary sources.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eef2ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <text x="70" y="88" font-family="Georgia, serif" font-size="34" fill="#111827">Claude Code leak claims versus verifiable evidence</text>
+  <text x="70" y="124" font-family="Arial, sans-serif" font-size="18" fill="#4b5563">Observed package facts support a narrower incident than the biggest social-media claims.</text>
+
+  <rect x="70" y="170" width="1060" height="90" rx="18" fill="#dcfce7"/>
+  <circle cx="110" cy="215" r="18" fill="#15803d"/>
+  <text x="145" y="208" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#14532d">Well supported</text>
+  <text x="145" y="236" font-family="Arial, sans-serif" font-size="19" fill="#14532d">2.1.88 existed, its tarball now returns 404, and later releases were pushed quickly.</text>
+
+  <rect x="70" y="285" width="1060" height="90" rx="18" fill="#fef3c7"/>
+  <circle cx="110" cy="330" r="18" fill="#d97706"/>
+  <text x="145" y="323" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#92400e">Plausible but not fully re-verifiable today</text>
+  <text x="145" y="351" font-family="Arial, sans-serif" font-size="19" fill="#92400e">A removed build likely exposed reconstructable source details, but the original tarball is no longer public.</text>
+
+  <rect x="70" y="400" width="1060" height="90" rx="18" fill="#fee2e2"/>
+  <circle cx="110" cy="445" r="18" fill="#dc2626"/>
+  <text x="145" y="438" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#991b1b">Overstated</text>
+  <text x="145" y="466" font-family="Arial, sans-serif" font-size="19" fill="#991b1b">"Anthropic leaked all internal code" goes beyond what package metadata and official docs actually establish.</text>
+
+  <rect x="70" y="525" width="510" height="130" rx="22" fill="#ffffff" stroke="#d1d5db"/>
+  <text x="102" y="570" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#111827">Confusion 1</text>
+  <text x="102" y="605" font-family="Arial, sans-serif" font-size="18" fill="#374151">Reconstructed source for a shipped build</text>
+  <text x="102" y="632" font-family="Arial, sans-serif" font-size="18" fill="#374151">is not the same as Anthropic's full private repo.</text>
+
+  <rect x="620" y="525" width="510" height="130" rx="22" fill="#ffffff" stroke="#d1d5db"/>
+  <text x="652" y="570" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#111827">Confusion 2</text>
+  <text x="652" y="605" font-family="Arial, sans-serif" font-size="18" fill="#374151">Public system prompts for claude.ai are a transparency</text>
+  <text x="652" y="632" font-family="Arial, sans-serif" font-size="18" fill="#374151">practice, not proof of a Claude Code source-code leak.</text>
+</svg>
