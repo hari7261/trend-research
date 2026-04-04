@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Trend Research Open Graph Image</title>
+  <desc id="desc">Open Graph image for Trend Research with editorial branding and latency-aware multimodal orchestration subtitle.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7f2e9"/>
+      <stop offset="100%" stop-color="#efe6d6"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#17314a"/>
+      <stop offset="100%" stop-color="#254864"/>
+    </linearGradient>
+    <style>
+      .kicker { font: 700 24px 'IBM Plex Sans', Arial, sans-serif; letter-spacing: 0.18em; fill: #8c6a3d; }
+      .headline { font: 700 62px 'IBM Plex Sans', Arial, sans-serif; fill: #102033; }
+      .sub { font: 400 28px 'Source Serif 4', Georgia, serif; fill: #32475c; }
+      .panelTitle { font: 700 24px 'IBM Plex Sans', Arial, sans-serif; fill: #f8f3ea; }
+      .panelText { font: 400 18px 'IBM Plex Sans', Arial, sans-serif; fill: #d9e4ee; }
+    </style>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1035" cy="108" r="146" fill="#d9c3a0" opacity="0.25"/>
+  <circle cx="112" cy="546" r="124" fill="#b7c8d9" opacity="0.28"/>
+  <text x="88" y="120" class="kicker">TREND RESEARCH</text>
+  <text x="88" y="234" class="headline">Latency-Aware</text>
+  <text x="88" y="304" class="headline">Multimodal Agent</text>
+  <text x="88" y="374" class="headline">Orchestration</text>
+  <text x="90" y="444" class="sub">Citation-backed technical research on routing, caching,</text>
+  <text x="90" y="482" class="sub">and budgeted tool use for lower end-to-end delay.</text>
+  <rect x="782" y="120" width="324" height="326" rx="26" fill="url(#panel)"/>
+  <text x="824" y="184" class="panelTitle">Research Focus</text>
+  <text x="824" y="234" class="panelText">• Multimodal serving</text>
+  <text x="824" y="274" class="panelText">• Dynamic routing</text>
+  <text x="824" y="314" class="panelText">• Prefix-aware caching</text>
+  <text x="824" y="354" class="panelText">• Tool latency budgets</text>
+  <text x="824" y="394" class="panelText">• Production deployment</text>
+</svg>

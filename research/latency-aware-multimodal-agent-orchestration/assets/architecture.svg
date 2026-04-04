@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="860" viewBox="0 0 1280 860" role="img" aria-labelledby="title desc">
+  <title id="title">Latency-aware multimodal agent orchestration architecture</title>
+  <desc id="desc">A transparent SVG architecture diagram showing ingress, stage splitter, routing, cache broker, tool budget controller, and serving plane.</desc>
+  <defs>
+    <style>
+      .title { font: 700 30px 'IBM Plex Sans', Arial, sans-serif; fill: #102033; }
+      .label { font: 700 19px 'IBM Plex Sans', Arial, sans-serif; fill: #102033; }
+      .body { font: 400 15px 'IBM Plex Sans', Arial, sans-serif; fill: #34465a; }
+      .box { fill: none; stroke: #18324a; stroke-width: 2.3; rx: 18; }
+      .accent { fill: none; stroke: #8c6a3d; stroke-width: 2.3; rx: 18; }
+      .soft { fill: none; stroke: #6b7c8f; stroke-width: 2; stroke-dasharray: 7 7; rx: 18; }
+      .line { stroke: #29435c; stroke-width: 2.4; fill: none; marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#29435c"/>
+    </marker>
+  </defs>
+
+  <text x="54" y="62" class="title">Latency-Aware Multimodal Agent Orchestration</text>
+
+  <rect x="54" y="110" width="230" height="112" class="box"/>
+  <text x="92" y="154" class="label">Request Ingress</text>
+  <text x="92" y="182" class="body">Task type, modality, latency tier,</text>
+  <text x="92" y="205" class="body">complexity, evidence need</text>
+
+  <rect x="352" y="110" width="250" height="112" class="accent"/>
+  <text x="400" y="154" class="label">Stage Splitter</text>
+  <text x="395" y="182" class="body">encode, prefill, decode,</text>
+  <text x="401" y="205" class="body">retrieval, tool loop</text>
+
+  <rect x="670" y="58" width="264" height="128" class="box"/>
+  <text x="752" y="104" class="label">Dynamic Router</text>
+  <text x="712" y="132" class="body">quality, queue state, model cost,</text>
+  <text x="720" y="155" class="body">cache affinity, tool likelihood</text>
+
+  <rect x="670" y="210" width="264" height="128" class="box"/>
+  <text x="754" y="256" class="label">Cache Broker</text>
+  <text x="710" y="284" class="body">prefix stability, worker affinity,</text>
+  <text x="714" y="307" class="body">prompt cache key management</text>
+
+  <rect x="670" y="362" width="264" height="128" class="box"/>
+  <text x="716" y="408" class="label">Tool Budget Controller</text>
+  <text x="721" y="436" class="body">latency ceilings, stop rules,</text>
+  <text x="733" y="459" class="body">tiered tool invocation</text>
+
+  <rect x="1012" y="86" width="210" height="104" class="soft"/>
+  <text x="1050" y="130" class="label">Vision Encode</text>
+  <text x="1053" y="158" class="body">heterogeneous GPU</text>
+
+  <rect x="1012" y="230" width="210" height="104" class="soft"/>
+  <text x="1052" y="274" class="label">LLM Prefill</text>
+  <text x="1061" y="302" class="body">cache-sensitive</text>
+
+  <rect x="1012" y="374" width="210" height="104" class="soft"/>
+  <text x="1054" y="418" class="label">LLM Decode</text>
+  <text x="1040" y="446" class="body">latency-critical stream</text>
+
+  <rect x="1012" y="518" width="210" height="104" class="soft"/>
+  <text x="1058" y="562" class="label">Tool Plane</text>
+  <text x="1055" y="590" class="body">search, DB, APIs</text>
+
+  <rect x="352" y="548" width="582" height="178" class="accent"/>
+  <text x="554" y="592" class="label">Observability and Policy Layer</text>
+  <text x="400" y="624" class="body">TTFT / P90 / P99 latency, cache hit rate, tool-call rate, cost per task, policy audit, fallback decisions</text>
+  <text x="453" y="653" class="body">This layer feeds corrections back into routing, caching, and tool budget policies.</text>
+
+  <path d="M284 166 L352 166" class="line"/>
+  <path d="M602 166 L670 122" class="line"/>
+  <path d="M602 166 L670 274" class="line"/>
+  <path d="M602 166 L670 426" class="line"/>
+  <path d="M934 122 L1012 138" class="line"/>
+  <path d="M934 274 L1012 282" class="line"/>
+  <path d="M934 426 L1012 426" class="line"/>
+  <path d="M804 490 L804 548" class="line"/>
+  <path d="M1116 478 L1116 518" class="line"/>
+</svg>

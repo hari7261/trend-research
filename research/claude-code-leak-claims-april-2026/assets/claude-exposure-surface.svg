@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Exposure surface diagram</title>
+  <desc id="desc">A layered diagram separating a package build from a private repository and internal company systems.</desc>
+  <rect width="1200" height="760" fill="#f8fafc"/>
+  <text x="70" y="82" font-family="Georgia, serif" font-size="34" fill="#111827">What a package artifact can expose, and what it cannot prove</text>
+  <text x="70" y="118" font-family="Arial, sans-serif" font-size="18" fill="#4b5563">The online story got bigger than the package surface actually observed.</text>
+
+  <rect x="80" y="170" width="1040" height="120" rx="24" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="2"/>
+  <text x="110" y="220" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#0f172a">Layer 1: Published npm artifact</text>
+  <text x="110" y="255" font-family="Arial, sans-serif" font-size="20" fill="#0f172a">Bundled CLI output, helper binaries, package metadata, and any accidentally shipped debug artifacts.</text>
+
+  <rect x="80" y="325" width="1040" height="120" rx="24" fill="#ede9fe" stroke="#c4b5fd" stroke-width="2"/>
+  <text x="110" y="375" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#111827">Layer 2: Reconstructable source for that build</text>
+  <text x="110" y="410" font-family="Arial, sans-serif" font-size="20" fill="#111827">Potentially rich enough to reveal file structure, feature names, and implementation choices for one shipped version.</text>
+
+  <rect x="80" y="480" width="1040" height="120" rx="24" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="110" y="530" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#111827">Layer 3: Private development repository</text>
+  <text x="110" y="565" font-family="Arial, sans-serif" font-size="20" fill="#111827">History, branches, tests, tooling, review context, and files that may never ship in the public package.</text>
+
+  <rect x="80" y="635" width="1040" height="80" rx="24" fill="#fee2e2" stroke="#f87171" stroke-width="2"/>
+  <text x="110" y="683" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#111827">Layer 4: Anthropic-wide internal systems</text>
+  <text x="520" y="683" font-family="Arial, sans-serif" font-size="20" fill="#111827">Model infrastructure, deployment systems, secrets, and unrelated private code.</text>
+
+  <path d="M600 292 L600 322" stroke="#64748b" stroke-width="4" stroke-dasharray="8 8"/>
+  <path d="M600 447 L600 477" stroke="#64748b" stroke-width="4" stroke-dasharray="8 8"/>
+  <path d="M600 602 L600 632" stroke="#64748b" stroke-width="4" stroke-dasharray="8 8"/>
+
+  <text x="760" y="255" font-family="Arial, sans-serif" font-size="18" fill="#0369a1">Directly observable in current package analysis</text>
+  <text x="760" y="410" font-family="Arial, sans-serif" font-size="18" fill="#6d28d9">Often what people mean when they say "source leaked"</text>
+  <text x="760" y="565" font-family="Arial, sans-serif" font-size="18" fill="#b45309">Much broader than the public evidence strictly proves</text>
+  <text x="760" y="683" font-family="Arial, sans-serif" font-size="18" fill="#b91c1c">The viral "entire internal code" claim lands here</text>
+</svg>
