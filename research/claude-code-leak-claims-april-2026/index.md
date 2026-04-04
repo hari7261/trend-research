@@ -9,8 +9,8 @@ keywords:
   - package artifact analysis
   - AI tooling security
 author: "Trend Research"
-created: "2026-04-05"
-updated: "2026-04-05"
+created: "2026-04-04"
+updated: "2026-04-04"
 slug: "claude-code-leak-claims-april-2026"
 summary: "A careful analysis of the April 2026 Claude Code leak claims, built from official Anthropic documentation, npm registry metadata, and current package inspection."
 draft: false
