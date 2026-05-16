@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="860" viewBox="0 0 1280 860" role="img" aria-labelledby="title desc">
+  <title id="title">INDUS Terminal architecture</title>
+  <desc id="desc">Transparent SVG showing INDUS terminal UI, registry-driven engine, native modules, state, cache, and system command fallback.</desc>
+  <defs>
+    <style>
+      .title { font: 700 30px 'IBM Plex Sans', Arial, sans-serif; fill: #102033; }
+      .label { font: 700 19px 'IBM Plex Sans', Arial, sans-serif; fill: #102033; }
+      .body { font: 400 15px 'IBM Plex Sans', Arial, sans-serif; fill: #36506a; }
+      .box { fill: none; stroke: #1c3a55; stroke-width: 2.4; rx: 18; }
+      .accent { fill: none; stroke: #8c6a3d; stroke-width: 2.4; rx: 18; }
+      .soft { fill: none; stroke: #71859a; stroke-width: 2; stroke-dasharray: 8 8; rx: 18; }
+      .line { stroke: #29435c; stroke-width: 2.4; fill: none; marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#29435c"/>
+    </marker>
+  </defs>
+
+  <text x="54" y="62" class="title">INDUS Terminal as a Native Command Runtime</text>
+
+  <rect x="60" y="108" width="250" height="130" class="box"/>
+  <text x="110" y="156" class="label">Interactive Terminal</text>
+  <text x="94" y="186" class="body">banner, prompt, themes, history,</text>
+  <text x="102" y="210" class="body">session cwd, REPL command loop</text>
+
+  <rect x="382" y="92" width="290" height="160" class="accent"/>
+  <text x="452" y="142" class="label">Registry-Driven Engine</text>
+  <text x="426" y="174" class="body">token normalization, command resolution,</text>
+  <text x="417" y="198" class="body">lazy module loading, metrics, caching</text>
+  <text x="435" y="222" class="body">effect application and error rendering</text>
+
+  <rect x="744" y="72" width="214" height="104" class="soft"/>
+  <text x="791" y="116" class="label">Registry</text>
+  <text x="775" y="144" class="body">commands, usage, TTL,</text>
+  <text x="789" y="168" class="body">module binding</text>
+
+  <rect x="744" y="208" width="214" height="104" class="soft"/>
+  <text x="786" y="252" class="label">State Store</text>
+  <text x="779" y="280" class="body">theme, env, packages,</text>
+  <text x="787" y="304" class="body">workspaces</text>
+
+  <rect x="744" y="344" width="214" height="104" class="soft"/>
+  <text x="785" y="388" class="label">Metrics Cache</text>
+  <text x="774" y="416" class="body">latency history, cache</text>
+  <text x="794" y="440" class="body">visibility</text>
+
+  <rect x="382" y="348" width="576" height="196" class="box"/>
+  <text x="593" y="394" class="label">Native Module Surface</text>
+  <text x="432" y="432" class="body">core, terminal, developer, network, filesystem, environment, project, workspace, package, system, toolchain</text>
+  <text x="470" y="462" class="body">These commands form the INDUS-native platform instead of delegating everything to the OS shell.</text>
+
+  <rect x="382" y="610" width="290" height="128" class="accent"/>
+  <text x="458" y="658" class="label">Internal Pipeline Bus</text>
+  <text x="418" y="688" class="body">native command streaming via io.Pipe</text>
+  <text x="430" y="712" class="body">with shared cancellation semantics</text>
+
+  <rect x="744" y="610" width="290" height="128" class="box"/>
+  <text x="799" y="658" class="label">System Fallback</text>
+  <text x="773" y="688" class="body">cmd.exe or sh execution for git,</text>
+  <text x="780" y="712" class="body">python, docker, and host commands</text>
+
+  <path d="M310 174 L382 174" class="line"/>
+  <path d="M672 142 L744 124" class="line"/>
+  <path d="M672 174 L744 260" class="line"/>
+  <path d="M672 214 L744 396" class="line"/>
+  <path d="M528 252 L528 348" class="line"/>
+  <path d="M672 446 L744 446" class="line"/>
+  <path d="M528 544 L528 610" class="line"/>
+  <path d="M846 544 L846 610" class="line"/>
+</svg>

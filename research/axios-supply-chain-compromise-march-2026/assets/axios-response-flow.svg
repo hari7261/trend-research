@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="860" viewBox="0 0 1280 860" role="img" aria-labelledby="title desc">
+  <title id="title">Axios response and prevention flow</title>
+  <desc id="desc">Transparent SVG showing triage, containment, rebuild, and future prevention controls for the Axios supply-chain compromise.</desc>
+  <defs>
+    <style>
+      .title { font: 700 30px 'IBM Plex Sans', Arial, sans-serif; fill: #102033; }
+      .label { font: 700 19px 'IBM Plex Sans', Arial, sans-serif; fill: #102033; }
+      .body { font: 400 15px 'IBM Plex Sans', Arial, sans-serif; fill: #385069; }
+      .box { fill: none; stroke: #17324b; stroke-width: 2.3; rx: 18; }
+      .accent { fill: none; stroke: #8c6a3d; stroke-width: 2.3; rx: 18; }
+      .safe { fill: none; stroke: #54734f; stroke-width: 2.3; rx: 18; }
+      .line { stroke: #29435c; stroke-width: 2.4; fill: none; marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#29435c"/>
+    </marker>
+  </defs>
+
+  <text x="54" y="60" class="title">How Users Should Respond and How Teams Should Prevent Recurrence</text>
+
+  <rect x="70" y="146" width="260" height="118" class="box"/>
+  <text x="125" y="192" class="label">Step 1: Detect</text>
+  <text x="108" y="222" class="body">Check for Axios 1.14.1 / 0.30.4,</text>
+  <text x="111" y="246" class="body">plain-crypto-js, install logs</text>
+
+  <rect x="390" y="146" width="260" height="118" class="accent"/>
+  <text x="443" y="192" class="label">Step 2: Contain</text>
+  <text x="424" y="222" class="body">Stop using affected hosts and</text>
+  <text x="420" y="246" class="body">remove exposed CI runners</text>
+
+  <rect x="710" y="146" width="260" height="118" class="accent"/>
+  <text x="761" y="192" class="label">Step 3: Rotate</text>
+  <text x="735" y="222" class="body">Rotate npm, Git, cloud, SSH,</text>
+  <text x="742" y="246" class="body">DB, and app secrets</text>
+
+  <rect x="1030" y="146" width="180" height="118" class="accent"/>
+  <text x="1073" y="192" class="label">Step 4</text>
+  <text x="1061" y="222" class="body">Rebuild from</text>
+  <text x="1067" y="246" class="body">known-good</text>
+
+  <rect x="250" y="456" width="300" height="160" class="safe"/>
+  <text x="326" y="504" class="label">Consumer Controls</text>
+  <text x="290" y="536" class="body">lockfiles + npm ci</text>
+  <text x="290" y="564" class="body">minimum release age</text>
+  <text x="290" y="592" class="body">ignore-scripts where feasible</text>
+
+  <rect x="670" y="456" width="360" height="160" class="safe"/>
+  <text x="767" y="504" class="label">Maintainer Controls</text>
+  <text x="710" y="536" class="body">trusted publishing with OIDC</text>
+  <text x="710" y="564" class="body">revoke long-lived publish tokens</text>
+  <text x="710" y="592" class="body">protect release workflows and tags</text>
+
+  <path d="M330 206 L390 206" class="line"/>
+  <path d="M650 206 L710 206" class="line"/>
+  <path d="M970 206 L1030 206" class="line"/>
+  <path d="M1120 264 L1120 344 L850 344 L850 456" class="line"/>
+  <path d="M520 264 L520 456" class="line"/>
+</svg>

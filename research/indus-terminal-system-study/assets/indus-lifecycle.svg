@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="780" viewBox="0 0 1280 780" role="img" aria-labelledby="title desc">
+  <title id="title">INDUS lifecycle and delivery flow</title>
+  <desc id="desc">Transparent SVG showing repository source, build and test workflow, installer packaging, releases, docs, and user adoption flow for INDUS.</desc>
+  <defs>
+    <style>
+      .title { font: 700 30px 'IBM Plex Sans', Arial, sans-serif; fill: #102033; }
+      .label { font: 700 18px 'IBM Plex Sans', Arial, sans-serif; fill: #102033; }
+      .body { font: 400 15px 'IBM Plex Sans', Arial, sans-serif; fill: #375069; }
+      .box { fill: none; stroke: #17324b; stroke-width: 2.3; rx: 18; }
+      .accent { fill: none; stroke: #8c6a3d; stroke-width: 2.3; rx: 18; }
+      .line { stroke: #29435c; stroke-width: 2.3; fill: none; marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#29435c"/>
+    </marker>
+  </defs>
+
+  <text x="54" y="58" class="title">INDUS Repository to User Delivery Flow</text>
+
+  <rect x="70" y="128" width="224" height="124" class="box"/>
+  <text x="129" y="174" class="label">Source Repository</text>
+  <text x="111" y="204" class="body">Go runtime, registry, docs,</text>
+  <text x="131" y="228" class="body">icons, installer assets</text>
+
+  <rect x="362" y="128" width="224" height="124" class="accent"/>
+  <text x="408" y="174" class="label">Release Workflow</text>
+  <text x="400" y="204" class="body">tag parse, build, tests,</text>
+  <text x="410" y="228" class="body">smoke run, checksums</text>
+
+  <rect x="654" y="128" width="224" height="124" class="box"/>
+  <text x="717" y="174" class="label">Packaging</text>
+  <text x="699" y="204" class="body">CLI binary, GUI binary,</text>
+  <text x="702" y="228" class="body">Inno Setup installer</text>
+
+  <rect x="946" y="128" width="224" height="124" class="accent"/>
+  <text x="1022" y="174" class="label">GitHub Release</text>
+  <text x="999" y="204" class="body">versioned assets, checksums,</text>
+  <text x="1025" y="228" class="body">download surface</text>
+
+  <rect x="216" y="398" width="272" height="144" class="box"/>
+  <text x="284" y="448" class="label">Documentation Surface</text>
+  <text x="253" y="480" class="body">website, commands index, versioned docs,</text>
+  <text x="291" y="504" class="body">machine-readable commands.json</text>
+
+  <rect x="518" y="398" width="272" height="144" class="box"/>
+  <text x="575" y="448" class="label">Installation Layer</text>
+  <text x="560" y="480" class="body">PATH integration, shell entry,</text>
+  <text x="572" y="504" class="body">desktop and context menu</text>
+
+  <rect x="820" y="398" width="272" height="144" class="accent"/>
+  <text x="886" y="448" class="label">User Runtime</text>
+  <text x="871" y="480" class="body">interactive REPL, native commands,</text>
+  <text x="897" y="504" class="body">workspace and system tasks</text>
+
+  <rect x="438" y="620" width="434" height="96" class="box"/>
+  <text x="540" y="662" class="label">Product Potential Loop</text>
+  <text x="470" y="690" class="body">Distribution, docs, and runtime observability reinforce adoption and future command-surface growth.</text>
+
+  <path d="M294 190 L362 190" class="line"/>
+  <path d="M586 190 L654 190" class="line"/>
+  <path d="M878 190 L946 190" class="line"/>
+  <path d="M1058 252 L956 398" class="line"/>
+  <path d="M766 252 L654 398" class="line"/>
+  <path d="M474 252 L352 398" class="line"/>
+  <path d="M654 542 L654 620" class="line"/>
+</svg>

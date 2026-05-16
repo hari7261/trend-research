@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Latency pipeline for multimodal agent orchestration</title>
+  <desc id="desc">A transparent SVG showing stacked latency stages from request ingress through encode, routing, tool execution, decode, and response.</desc>
+  <defs>
+    <style>
+      .title { font: 700 30px 'IBM Plex Sans', Arial, sans-serif; fill: #102033; }
+      .label { font: 700 18px 'IBM Plex Sans', Arial, sans-serif; fill: #102033; }
+      .body { font: 400 14px 'IBM Plex Sans', Arial, sans-serif; fill: #3a4e62; }
+      .axis { stroke: #20364f; stroke-width: 2; }
+      .bar1 { fill: #d6b98b; }
+      .bar2 { fill: #90a7c1; }
+      .bar3 { fill: #557a95; }
+      .bar4 { fill: #c9835a; }
+      .bar5 { fill: #7f8d6d; }
+      .bar6 { fill: #314c67; }
+      .outline { fill: none; stroke: #20364f; stroke-width: 1.6; }
+    </style>
+  </defs>
+
+  <text x="54" y="58" class="title">User-Perceived Delay Is a Pipeline, Not a Single Model Call</text>
+
+  <line x1="96" y1="610" x2="1184" y2="610" class="axis"/>
+  <line x1="96" y1="132" x2="96" y2="610" class="axis"/>
+
+  <rect x="136" y="220" width="124" height="390" class="bar1"/>
+  <rect x="292" y="170" width="124" height="440" class="bar2"/>
+  <rect x="448" y="248" width="124" height="362" class="bar3"/>
+  <rect x="604" y="132" width="124" height="478" class="bar4"/>
+  <rect x="760" y="282" width="124" height="328" class="bar5"/>
+  <rect x="916" y="202" width="124" height="408" class="bar6"/>
+
+  <rect x="136" y="220" width="124" height="390" class="outline"/>
+  <rect x="292" y="170" width="124" height="440" class="outline"/>
+  <rect x="448" y="248" width="124" height="362" class="outline"/>
+  <rect x="604" y="132" width="124" height="478" class="outline"/>
+  <rect x="760" y="282" width="124" height="328" class="outline"/>
+  <rect x="916" y="202" width="124" height="408" class="outline"/>
+
+  <text x="147" y="646" class="label">Encode</text>
+  <text x="139" y="670" class="body">vision or OCR</text>
+
+  <text x="299" y="646" class="label">Prefill</text>
+  <text x="297" y="670" class="body">context ingest</text>
+
+  <text x="467" y="646" class="label">Routing</text>
+  <text x="447" y="670" class="body">model selection</text>
+
+  <text x="627" y="646" class="label">Tool Use</text>
+  <text x="615" y="670" class="body">external latency</text>
+
+  <text x="784" y="646" class="label">Decode</text>
+  <text x="774" y="670" class="body">final synthesis</text>
+
+  <text x="939" y="646" class="label">Queueing</text>
+  <text x="932" y="670" class="body">tail effects</text>
+
+  <text x="1100" y="188" class="label">Largest hidden risk</text>
+  <text x="1090" y="214" class="body">Tool and queue delay often outweigh</text>
+  <text x="1095" y="236" class="body">pure model inference time.</text>
+</svg>

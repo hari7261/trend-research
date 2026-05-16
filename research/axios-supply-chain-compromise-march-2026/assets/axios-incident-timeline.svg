@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">Axios supply-chain incident timeline</title>
+  <desc id="desc">Transparent SVG timeline showing clean releases, malicious npm versions, public disclosure, registry cleanup, and restored safe state.</desc>
+  <defs>
+    <style>
+      .title { font: 700 30px 'IBM Plex Sans', Arial, sans-serif; fill: #102033; }
+      .label { font: 700 18px 'IBM Plex Sans', Arial, sans-serif; fill: #102033; }
+      .body { font: 400 15px 'IBM Plex Sans', Arial, sans-serif; fill: #395068; }
+      .line { stroke: #1d3c57; stroke-width: 4; fill: none; }
+      .node { fill: #17324b; }
+      .alert { fill: #b1532d; }
+      .safe { fill: #54734f; }
+      .box { fill: none; stroke: #1d3c57; stroke-width: 2.2; rx: 16; }
+      .accent { fill: none; stroke: #8c6a3d; stroke-width: 2.2; rx: 16; }
+    </style>
+  </defs>
+
+  <text x="54" y="58" class="title">Axios npm Supply-Chain Incident Timeline</text>
+  <line x1="110" y1="380" x2="1170" y2="380" class="line"/>
+
+  <circle cx="180" cy="380" r="12" class="safe"/>
+  <circle cx="430" cy="380" r="12" class="safe"/>
+  <circle cx="680" cy="380" r="12" class="alert"/>
+  <circle cx="910" cy="380" r="12" class="alert"/>
+  <circle cx="1110" cy="380" r="12" class="safe"/>
+
+  <rect x="88" y="156" width="184" height="124" class="box"/>
+  <text x="128" y="202" class="label">Feb 18, 2026</text>
+  <text x="124" y="232" class="body">Clean GitHub release</text>
+  <text x="142" y="256" class="body">Axios v0.30.3</text>
+
+  <rect x="338" y="478" width="184" height="124" class="box"/>
+  <text x="378" y="524" class="label">Mar 27, 2026</text>
+  <text x="374" y="554" class="body">Clean GitHub release</text>
+  <text x="392" y="578" class="body">Axios v1.14.0</text>
+
+  <rect x="588" y="156" width="184" height="124" class="accent"/>
+  <text x="616" y="202" class="label">Attack Window</text>
+  <text x="618" y="232" class="body">Malicious npm-only</text>
+  <text x="617" y="256" class="body">Axios 1.14.1 / 0.30.4</text>
+
+  <rect x="818" y="478" width="184" height="124" class="accent"/>
+  <text x="846" y="524" class="label">Mar 31, 2026</text>
+  <text x="852" y="554" class="body">Public disclosure</text>
+  <text x="860" y="578" class="body">Issue #10604</text>
+
+  <rect x="1018" y="156" width="184" height="124" class="box"/>
+  <text x="1046" y="202" class="label">Current State</text>
+  <text x="1048" y="232" class="body">Registry restored:</text>
+  <text x="1055" y="256" class="body">latest = 1.14.0</text>
+</svg>
